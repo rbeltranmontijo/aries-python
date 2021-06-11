@@ -166,7 +166,8 @@ async def main(args):
 
         faber_agent.public_did = True
         faber_schema_name = "degree schema"
-        faber_schema_attrs = ["nombre", "date", "degree", "age", "timestamp"]
+        # faber_schema_attrs = ["nombre", "fechaNacimiento", "rfc", "curp", "urlLogo", "urlSelfie"]
+        faber_schema_attrs = ["name", "date", "degree", "age"]
         await faber_agent.initialize(
             the_agent=agent,
             schema_name=faber_schema_name,
